@@ -34,5 +34,17 @@ Windows 10-11
    run start.exe
 
 
-2.
-pyinstaller --onefile start_youtube_downloader.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+pyinstaller --onefile start.py
