@@ -35,4 +35,4 @@ Windows 10-11
 
 
 2.
-   pyinstaller --onefile start.py
+pyinstaller --onefile start_youtube_downloader.py
