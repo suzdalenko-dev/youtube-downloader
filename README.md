@@ -26,8 +26,10 @@ Windows 10-11
 
 ## Installation
 
-1. **Clone the Repository**:
 
+
+1. **Clone the Repository**:
+   you need install "yt-dlp" and "ffmpeg" framework
    ```bash
    git clone https://github.com/your-repo/youtube-downloader.git
    cd youtube-downloader
@@ -45,6 +47,14 @@ Windows 10-11
 
 
 
+Comments:
 
 
 pyinstaller --onefile start.py
+pyinstaller --onefile --add-binary "C:/ProgramData/chocolatey/bin/ffmpeg.exe;." --add-binary "C:/python_exe/Scripts/yt-dlp.exe;." start.py
+
+
+powerShell:
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+choco install ffmpeg
